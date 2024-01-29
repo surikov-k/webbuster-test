@@ -1,12 +1,69 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simitex</title>
-  </head>
-  <body>
-  <h1>Simitex</h1>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport"/>
+  <title>Simitex</title>
+</head>
+<body class="page">
+<header class="header">
+  <div class="container header__container">
+    <a class="header__logo">
+      <img
+        alt="Simitex logo"
+        height="28"
+        src="img/logo-simitex.svg"
+        width="155"
+      >
+    </a>
+    <nav class="header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link"
+             href="#">Каталог</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link"
+             href="#">Производители</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link"
+             href="#">Для кого мы работаем</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link"
+             href="#">Сертификаты</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link"
+             href="#">О нас</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link"
+             href="#">FAQ</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link"
+             href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="header__nav-phone-link"
+       href="tel:+78123135845">+7 (812) 313-58-45</a>
+
+    <button class="button header__nav-toggle"
+            id="header-nav-toggle"
+            title="Открыть меню"
+            type="button"
+    >
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+  </div>
+</header>
+
+<script src="/src/js/main.js"
+        type="module"></script>
+</body>
 </html>
