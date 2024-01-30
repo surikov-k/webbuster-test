@@ -5,12 +5,15 @@
     position: absolute;
     top: 130px;
     left: -100%;
+    overflow-y: scroll;
     width: 50%;
-    padding: 0 50px 50px;
+
+    height: 100vh;
+
+    padding:  50px;
 
     transition: left var(--transition-duration) ease;
-
-    background-color: var(--color-background);
+    background-color: var(--color-dark-background-2);
 
     .header.open & {
       left: 0;
@@ -23,7 +26,6 @@
 
   @media (max-width: 600px) {
     top: 200px;
-
   }
 
   &__list {
@@ -44,7 +46,6 @@
   }
 
   &__link {
-    font-family: FuturaLightC, sans-serif;
     font-size: 18px;
     font-weight: 300;
     font-style: normal;
@@ -54,6 +55,10 @@
     padding: 25px 0;
 
     text-decoration: none;
+
+    @media (max-width: 1400px) {
+      padding: 15px 0 0;
+    }
 
     @media (max-width: 1024px) {
       font-size: 22px;

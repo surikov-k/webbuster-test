@@ -1,3 +1,106 @@
 .promo {
+  position: relative;
+  padding-top: 60px;
 
+  padding-bottom: 180px;
+  color: var(--color-light);
+  background: url(public/img/wave.svg) center bottom / 1920px repeat-x,
+  url(public/img/background.jpg) top -120px center,
+  linear-gradient(90deg,
+                  var(--color-dark-background-2),
+                  var(--color-dark-background-2)
+    );
+  padding-inline: 30px;
+
+  &__container {
+    display: grid;
+    align-content: start;
+    justify-items: left;
+
+    grid-template-columns: 1fr auto;
+    grid-gap: 55px;
+
+    @media (max-width: 920px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    margin: 10px 0 0;
+    color: var(--color-light);
+
+    span:first-child {
+      font-size: 69px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    span:nth-child(2) {
+      font-size: 56.23px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 60px;
+      color: var(--color-accent-1);
+    }
+
+    span:nth-child(3) {
+      font-size: 61px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 90px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__text {
+    font-size: 23px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    margin-bottom: 37px;
+    padding-right: 100px;
+    color: var(--color-accent-1);
+  }
+
+  &__list {
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 29px;
+    padding: 25px 31px;
+
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(150, 154, 247, .3) 1.34%,
+            rgba(150, 154, 247, 0.00) 96.66%);
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    column-gap: 10px;
+
+    &:before {
+      width: 10px;
+      height: 10px;
+      content: '';
+      border-radius: 50%;
+      background: url("public/img/check.svg") center center no-repeat;
+
+    }
+  }
+
+  &__form-container {
+    width: 380px;
+    padding: 40px 40px 36px;
+
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, #6A32B4 0%, #552693 100%),
+    linear-gradient(90deg, white, white);
+    background-repeat: no-repeat;
+    background-size: 100% 115px, 100% 100%;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  }
 }
