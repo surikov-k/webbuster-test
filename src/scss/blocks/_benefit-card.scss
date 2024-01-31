@@ -1,0 +1,30 @@
+.benefit-card {
+  flex-grow: 1;
+  padding: 40px 32px;
+  border-radius: var(--border-radius);
+  background:
+          var(--color-light)
+          url("public/img/benefit-background.png") bottom right no-repeat;
+
+  box-shadow: 0 4px 30px 0 rgba(9, 38, 192, 0.05);
+
+  &__icon-image {
+    margin-bottom: 40px;
+    margin-inline: auto;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #555;
+    margin-inline: 30px;
+  }
+}
