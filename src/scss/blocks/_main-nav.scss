@@ -14,6 +14,7 @@
 
     transition: left var(--transition-duration) ease;
     background-color: var(--color-dark-background-2);
+    background-image: linear-gradient(180deg, #6A32B4 0%, #552693 100%);
 
     .header.open & {
       left: 0;
@@ -25,7 +26,7 @@
   }
 
   @media (max-width: 600px) {
-    top: 200px;
+    top: 185px;
   }
 
   &__list {

@@ -9,12 +9,10 @@
   padding-bottom: 25px;
   color: var(--color-light);
   background:
-  url(public/img/background.jpg) bottom center,
+  url(public/img/background.jpg) top center,
   linear-gradient(90deg,
           var(--color-dark-background-2),
           var(--color-dark-background-2));
-
-  padding-inline: 30px;
 
   @media (max-width: 600px) {
     padding-top: 50px;

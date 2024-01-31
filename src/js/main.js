@@ -1,8 +1,6 @@
 import '../scss/style.scss'
+import { initMobileMenuToggle } from './mobile-menu-toggle';
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("header-nav-toggle")
-    .addEventListener("click", () => {
-    document.querySelector(".header").classList.toggle("open");
-  });
+  initMobileMenuToggle();
 });

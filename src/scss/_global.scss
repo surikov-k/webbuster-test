@@ -82,3 +82,7 @@ a {
   border: 0;
   clip-path: inset(100%);
 }
+
+body.lock {
+  overflow: hidden;
+}
