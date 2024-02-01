@@ -1,6 +1,11 @@
-import '../scss/style.scss'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import '../scss/style.scss';
+
 import { initMobileMenuToggle } from './mobile-menu-toggle';
+import { initManufacturesSlider } from './manufactures-slider';
 
 document.addEventListener("DOMContentLoaded", () => {
   initMobileMenuToggle();
+  initManufacturesSlider();
 });
