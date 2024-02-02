@@ -1,6 +1,7 @@
 @import
   "normalize.css",
   "fonts",
+  "mixins",
   "variables",
   "global",
   "typography";
@@ -17,3 +18,5 @@
 @import "blocks/benefit-card";
 @import "blocks/manufactures";
 @import "blocks/manufactures-slider";
+@import "blocks/workflow";
+@import "blocks/steps";
