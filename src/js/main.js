@@ -1,5 +1,6 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import '../scss/style.scss';
 
 import { initMobileMenuToggle } from './mobile-menu-toggle';

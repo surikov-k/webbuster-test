@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
 export function initManufacturesSlider() {
   const slider = document.querySelector('.manufactures-slider');
@@ -8,7 +8,13 @@ export function initManufacturesSlider() {
   }
 
   const swiper = new Swiper('.swiper', {
-    modules: [Navigation],
+    modules: [Navigation, Pagination],
+        slidesPerView: 5,
+        spaceBetween: 20,
+    pagination: {
+      el: '.manufactures-slider__pagination',
+      type: 'bullets',
+    },
     navigation: {
       nextEl: '.manufactures-slider__control--next',
       prevEl: '.manufactures-slider__control--prev',
